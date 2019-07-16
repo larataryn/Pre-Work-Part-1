@@ -5,38 +5,121 @@
 	padding: 0;
 }
 
+/* General structure */
 body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 680px;
+  margin: .5em;
+  padding: 2em 2.5em;
+  background-color: #FDFDFD;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #777;
+  line-height: 1.4;
+  text-align: center;
 }
 
-/* Fonts */
-h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+main {
+  padding: 1.5em 1.5em 1.3em 1.5em;
+  border: 2px solid #E1E1E1;
+  box-shadow: 0 3px #F3F3F3;
+  font-size: 1.7em;
+  text-align: left;
 }
 
-.container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5em;
 }
 
-/* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
+/* Header classes */
+.text-box {
+  padding: 1em;
+  border-radius: 5px;
+  background-color: #424242;
+  font-size: 1.8em;
+}
 
-	FONTS:
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
+.arrow {
+  width: 0;
+  height: 0;
+  margin: 0 0 .5em 32em;
+  border-left: .7em solid transparent;
+  border-right: .7em solid transparent;
+  border-top: .9em solid #424242;
+}
 
-  COLORS:
-  blue: #20A1D4;
-  green: #1CBC2C;
-  orange: #EF5F3C;
-  black: #424242;
-  grey: #777;
-  light grey: #eaeaea;
-*/
+/* Content classes */
+.progress-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: -1.5em -1.5em -.3em -1.5em;
+  box-shadow: 0 2px #E1E1E1;
+  background-color: #EF6A3E;
+  line-height: .9;
+}
 
-/* Your CSS code goes here */
+.remaining-bar {
+  padding-right: 6em;
+  background-color: #FAFAFA;
+}
+
+.donate-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 1em 0 1em 0;
+  text-align: left;
+}
+
+.donate-box {
+  width: 47%;
+  padding: .75em;
+  font-size: 1.2em;
+}
+
+.gray-border {
+  border: 2px solid #E1E1E1;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  background-color: #1CBC2C;
+  border: 2px solid #1BB22B;
+  border-radius: 5px;
+  box-shadow: 1px 1.5px #1BB22B;
+  text-align: center;
+}
+
+.action-box {
+  background-color: #FAFAFA;
+  width: 47%;
+  padding: .7em;
+  box-shadow: 1px 2px #E1E1E1;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Text Modification Classes */
+.white-text {
+  color: #FBFBFB;
+}
+
+.orange-text {
+  color: #EF5F3C;
+}
+
+.blue-text {
+  color: #21A8DE;
+  font-style: italic;
+  font-weight: 550;
+  line-height: 1;
+}
+
+.black-text {
+  color: #424242;
+}
